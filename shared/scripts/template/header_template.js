@@ -22,6 +22,8 @@ function getLogedOutHeaderTemplate() {
     } else {
         return `
             <div class="d_flex_cc_gm">
+                <button type="button" onclick="openDialog('guest_login_dialog')"
+                            class="std_btn btn_secondary pad_s">Gäste-Login</button>
                 <a href="./login.html" class="std_btn btn_secondary pad_s ">Login</a>
                 <a href="./registration.html" class="std_btn btn_prime pad_s  font_white_color">Registrieren</a>
             </div>`

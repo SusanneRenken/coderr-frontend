@@ -1,11 +1,11 @@
 const GUEST_LOGINS = {
     customer : {
-        username: 'andrey',
-        password: 'asdasd'
+        username: 'GastKunde',
+        password: 'Gast1234'
     },
     business : {
-        username: 'kevin',
-        password: 'asdasd24'
+        username: 'GastAnbieter',
+        password: 'Gast1234'
     }
 }
 

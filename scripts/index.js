@@ -51,3 +51,12 @@ function redirectToOfferListWSearch() {
   let inputRef = document.getElementById("index_search_field");
   redirectToOfferList(inputRef.value);
 }
+
+/**
+ * Logs in a guest user based on the specified type.
+ * @function guestLogin
+ * @param {string} type - The type of guest user to log in.
+ */
+function guestLogin(type) {
+  logIn(GUEST_LOGINS[type]);
+}

@@ -14,10 +14,6 @@
     padding: var(--form-pad);
 }
 
-.login_btn > img{
-    filter: brightness(0) invert(1);
-}
-
 @media screen and (max-width: 1024px) {
     .login_section{
         max-width: var(--form-s-max-w);
@@ -25,12 +21,5 @@
 
     .login_img_section{
         display: none;
-    }
-}
-
-
-@media screen and (max-width: 780px) {
-    .guest_login_box{
-        flex-direction: column !important;
     }
 }

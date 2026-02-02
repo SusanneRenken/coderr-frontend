@@ -409,7 +409,7 @@ hr {
 
 
 .searchbar {
-    padding: 16px 64px;
+    padding: 16px 0px;
     display: flex;
 }
 
@@ -443,14 +443,14 @@ hr {
 
 @media screen and (max-width: 780px) and (min-width: 480px) {
     .searchbar {
-        padding: 16px 32px;
+        padding: 16px 0px;
     }
 
 }
 
 @media screen and (max-width: 480px) {
     .searchbar {
-        padding: 8px 16px;
+        padding: 8px 0px;
     }
     .searchbar>input {
         padding: 0 8px;
