@@ -39,11 +39,15 @@ main{
 }
 
 .landingheader_box {
-    height: 600px;
+    height: 420px;
     background: var(--bg-color-dark);
-    padding: 0 240px;
+    padding: 0 32px;
     position: relative;
     border-radius: var(--form-rad);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
 }
 
 .person_img {
@@ -51,30 +55,20 @@ main{
     height: 270px;
     border-radius: 8px;
     background: #DE3C3F;
-    position: absolute;
 }
 
-.landingheader_box img:nth-child(1) {
-    top: 0;
-    left: 48px;
-}
-
-.landingheader_box img:nth-child(2) {
-    right: 24px;
-    bottom: 16px;
-}
-
-.landingheader_box img:nth-child(3) {
-    left: 24px;
-    bottom: 16px;
-}
-
-.landingheader_box img:nth-child(4) {
-    top: 0;
-    right: 48px;
+.landingheader_box > div {
+    flex: 1 1 auto;
+    min-width: 0;
+    padding: 0 24px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 h1{
+    font-size: 36px;
     text-align: center;
 }
 
@@ -92,11 +86,11 @@ h1{
 
 @media only screen and (min-width: 1024px) and (max-width: 1124px) {
     .landingheader_box {
-        height: 500px;
+        height: 380px;
     }
 
     .landingheader_box {
-        padding: 0 210px;
+        padding: 0 32px;
     }
 
     .person_img {
@@ -107,15 +101,12 @@ h1{
 
 @media only screen and (min-width: 769px) and (max-width: 1024px) {
     h1 {
-        font-size: 34px !important;
+        font-size: 24px !important;
     }
 
     .landingheader_box {
-        height: 450px;
-    }
-
-    .landingheader_box {
-        padding: 0 170px;
+        height: 320px;
+        padding: 0 32px;
     }
 
     .person_img {
@@ -130,7 +121,7 @@ h1{
     }
 
     .landingheader_box {
-        height: 550px;
+        height: 280px;
     }
 
     .landingheader_box {
@@ -153,17 +144,16 @@ h1{
 
 @media screen and (max-width: 480px) {
     h1 {
-        font-size: 28px !important;
+        font-size: 18px !important;
     }
 
     .landingheader_box {
-        height: 650px;
+        height: 260px;
         padding: 0 4px;
     }
 
     .person_img {
-        width: 70px;
-        height: 120px;
+        display: none;
     }
 
     .green_info_section > section{

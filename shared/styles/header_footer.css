@@ -17,8 +17,9 @@
 
 
 .main_header {
+    position: relative;
     border-bottom: var(--form-border);
-    padding: 16px 32px;
+    padding: 24px 32px;
 }
 
 
@@ -29,6 +30,18 @@
 
 .logo img {
     height: 28px;
+}
+
+.main_header .disclaimer {
+    position: absolute;
+    top: 8px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 10px;
+    color: var(--text-color-secondary);
+    width: 100%;
+    text-align: center;
+    z-index: 3;
 }
 
 .head_content_right {
@@ -93,7 +106,7 @@
     }
 
     .main_header {
-        padding: 16px 32px;
+        padding: 24px 32px;
     }
 }
 
@@ -105,7 +118,7 @@
     }
 
     .main_header {
-        padding: 16px 32px;
+        padding: 24px 32px;
     }
 }
 
