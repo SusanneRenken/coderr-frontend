@@ -1,59 +1,222 @@
 <!DOCTYPE html>
 <html lang="de">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Coderr/</title>
     <link rel="icon" type="image/png" href="./assets/logo/favicon.png" />
 
-    <link rel="stylesheet" href="./shared/styles/variables.css">
-    <link rel="stylesheet" href="./shared/styles/standard.css">
-    <link rel="stylesheet" href="./shared/styles/form.css">
-    <link rel="stylesheet" href="./shared/styles/assets.css">
-    <link rel="stylesheet" href="./shared/styles/fonts.css">
-    <link rel="stylesheet" href="./shared/styles/header_footer.css">
-    <link rel="stylesheet" href="./styles/index.css">
+    <link rel="stylesheet" href="./shared/styles/variables.css" />
+    <link rel="stylesheet" href="./shared/styles/standard.css" />
+    <link rel="stylesheet" href="./shared/styles/form.css" />
+    <link rel="stylesheet" href="./shared/styles/assets.css" />
+    <link rel="stylesheet" href="./shared/styles/fonts.css" />
+    <link rel="stylesheet" href="./shared/styles/header_footer.css" />
+    <link rel="stylesheet" href="./styles/index.css" />
 
     <script src="./shared/scripts/redirect.js"></script>
     <script src="./shared/scripts/ui_helper.js"></script>
-    
-    
+
     <script src="./shared/scripts/config.js"></script>
     <script src="./shared/scripts/auth.js"></script>
     <script src="./shared/scripts/api.js"></script>
     <script src="./shared/scripts/user_crud.js"></script>
     <script src="./shared/scripts/template/header_template.js"></script>
     <script src="./shared/scripts/header.js"></script>
-</head>
+  </head>
 
-<body onload="setHeader()" onclick="closeAllOpenedElements()">
+  <body onload="setHeader()" onclick="closeAllOpenedElements()">
     <header class="main_header">
-
-        <a class="logo" href="./index.html">
-            <img src="./assets/logo/logo_coderr.svg" alt="" srcset="">
-        </a>
-
-        <div id="head_content_right" class="d_flex_cc_gm head_content_right"></div>
+      <a class="logo" href="./index.html">
+        <img src="./assets/logo/logo_coderr.svg" alt="" srcset="" />
+      </a>
+      <div id="head_content_right" class="d_flex_cc_gm head_content_right"></div>
     </header>
 
     <main>
-        <section class="d_flex_cc_gl f_d_c">
-            <h1 class="font_prime_color">Datenschutz</h1>
-            <h1>Hier ist Platz für deinen generierten Datenschutz!</h1>
+      <section class="d_flex_cc_gl f_d_c">
+        <h1 class="font_prime_color">Datenschutz</h1>
 
-        </section>
+        <h2>1. Allgemeine Hinweise</h2>
+        <p>
+          Diese Datenschutzerklärung informiert über Art, Umfang und Zweck der Verarbeitung personenbezogener Daten
+          innerhalb der Webanwendung „Coderr“. Coderr ist ein Portfolio- und Demoprojekt. Eine öffentliche Registrierung
+          ist möglich.
+        </p>
+
+        <h2>2. Verantwortliche Stelle</h2>
+        <p>
+          Verantwortlich für die Datenverarbeitung ist:<br /><br />
+          Susanne Renken<br />
+          Birkenhain 2d<br />
+          29640 Schneverdingen<br />
+          Deutschland<br />
+          E-Mail:
+          <a class="link" href="mailto:contact@susanne-renken.com">contact@susanne-renken.com</a>
+        </p>
+
+        <h2>3. Hosting</h2>
+        <p>
+          Das Backend von Coderr wird auf einem VPS der IONOS SE (Deutschland) betrieben. Der Serverstandort ist
+          Deutschland.
+        </p>
+
+        <h2>4. Server-Log-Dateien</h2>
+        <p>
+          Beim Aufruf der Website werden durch den Hosting-Provider automatisch Informationen in sogenannten
+          Server-Log-Dateien erfasst. Dies können insbesondere sein:
+        </p>
+        <ul>
+          <li>IP-Adresse</li>
+          <li>Datum und Uhrzeit der Anfrage</li>
+          <li>aufgerufene Seite / Ressource</li>
+          <li>Browsertyp und Browserversion</li>
+          <li>verwendetes Betriebssystem</li>
+          <li>Referrer-URL (falls übertragen)</li>
+          <li>HTTP-Statuscode</li>
+        </ul>
+        <p>
+          Die Verarbeitung erfolgt zur Gewährleistung der Sicherheit und Stabilität des Systems.
+          Rechtsgrundlage ist Art. 6 Abs. 1 lit. f DSGVO (berechtigtes Interesse).
+          Die Logdaten werden für bis zu 30 Tage gespeichert.
+        </p>
+
+        <h2>5. Registrierung, Login und Authentifizierung</h2>
+        <p>
+          Coderr bietet eine öffentliche Registrierung und einen Login. Zur Nutzung geschützter Funktionen wird eine
+          Authentifizierung mittels Token verwendet (Django REST Framework TokenAuthentication).
+        </p>
+        <p>Im Rahmen der Registrierung bzw. Anmeldung werden verarbeitet:</p>
+        <ul>
+          <li>Benutzername</li>
+          <li>E-Mail-Adresse</li>
+          <li>Passwort (im Backend in gehashter/verschlüsselter Form gespeichert)</li>
+        </ul>
+        <p>
+          Das Frontend speichert zur Sitzung/Anmeldung Authentifizierungsdaten im localStorage des Browsers
+          (z. B. <code>auth-token</code>, <code>auth-user</code>, <code>auth-user-id</code>).
+        </p>
+        <p>
+          Rechtsgrundlage: Art. 6 Abs. 1 lit. b DSGVO (Vertrag/vertragsähnliches Nutzungsverhältnis).
+        </p>
+
+        <h2>6. Gastzugänge</h2>
+        <p>
+          Für Demonstrationszwecke stehen Gastzugänge zur Verfügung (z. B. „GastKunde“ und „GastAnbieter“).
+          Diese dienen ausschließlich dem Test der Anwendung. Bitte geben Sie in Gastkonten keine echten personenbezogenen
+          Daten ein.
+        </p>
+
+        <h2>7. Profildaten</h2>
+        <p>
+          Je nach Kontotyp (z. B. Anbieter/Kunde) können im Profil zusätzliche Angaben verarbeitet werden, insbesondere:
+        </p>
+        <ul>
+          <li>Vorname, Nachname</li>
+          <li>Standort/Ort</li>
+          <li>Telefonnummer</li>
+          <li>Beschreibung/Profiltext</li>
+          <li>Arbeitszeiten (falls angegeben)</li>
+          <li>Profilbild</li>
+        </ul>
+        <p>
+          Rechtsgrundlage: Art. 6 Abs. 1 lit. b DSGVO (Bereitstellung der Profilfunktion) und Art. 6 Abs. 1 lit. f DSGVO
+          (berechtigtes Interesse an einer funktionsfähigen Plattformdarstellung).
+        </p>
+
+        <h2>8. Angebote, Bestellungen und Bewertungen</h2>
+        <p>
+          Coderr ermöglicht die Erstellung und Verwaltung von Angeboten, Bestellungen und Bewertungen. Dabei können u. a.
+          folgende Daten verarbeitet werden:
+        </p>
+        <ul>
+          <li>Angebotsdaten (Titel, Beschreibung, Details, Features, Revisionen)</li>
+          <li>Bestell-/Auftragsdaten (Status, Zuordnung zu Nutzer/Angebot)</li>
+          <li>Bewertungen (z. B. Sternebewertung und optionaler Text, je nach Umsetzung)</li>
+        </ul>
+        <p>
+          Rechtsgrundlage: Art. 6 Abs. 1 lit. b DSGVO.
+        </p>
+
+        <h2>9. Uploads (Bilder)</h2>
+        <p>
+          In Coderr können Bilder hochgeladen werden (z. B. Profilbilder, Angebotsbilder). Technisch werden diese als
+          Datei-Uploads an das Backend übertragen und serverseitig im Medienverzeichnis gespeichert
+          (z. B. <code>/media/</code>).
+        </p>
+        <p>
+          Rechtsgrundlage: Art. 6 Abs. 1 lit. b DSGVO (Bereitstellung der Upload-Funktion) sowie Art. 6 Abs. 1 lit. f DSGVO
+          (sichere und stabile Bereitstellung).
+        </p>
+
+        <h2>10. Datenbank</h2>
+        <p>
+          Die Anwendung nutzt PostgreSQL als Datenbank. Die Datenbank läuft auf demselben Server (VPS) wie die Anwendung.
+          Eine Weitergabe an Dritte erfolgt nicht, soweit nicht in dieser Erklärung genannt.
+        </p>
+
+        <h2>11. E-Mail-Kommunikation</h2>
+        <p>
+          Für den Betrieb können systembezogene E-Mails (z. B. Registrierungs-/Sicherheitskommunikation) technisch über IONOS
+          SMTP abgewickelt werden. E-Mails können beim Provider bis zu 30 Tage gespeichert werden.
+        </p>
+
+        <h2>12. Keine Analyse-Tools / Tracking</h2>
+        <p>
+          Es werden keine Analyse-, Tracking- oder Marketing-Tools (z. B. Google Analytics) eingesetzt.
+          Cookies werden nicht aktiv zu Trackingzwecken gesetzt.
+        </p>
+
+        <h2>13. Speicherdauer</h2>
+        <p>
+          Personenbezogene Daten werden grundsätzlich so lange gespeichert, wie dies für die Bereitstellung der Anwendung
+          erforderlich ist oder gesetzliche Aufbewahrungsfristen bestehen. Es existieren keine automatischen Löschroutinen.
+          Eine Löschung kann auf Anfrage erfolgen.
+        </p>
+
+        <h2>14. Ihre Rechte</h2>
+        <p>
+          Sie haben nach der DSGVO insbesondere folgende Rechte:
+        </p>
+        <ul>
+          <li>Auskunft (Art. 15 DSGVO)</li>
+          <li>Berichtigung (Art. 16 DSGVO)</li>
+          <li>Löschung (Art. 17 DSGVO)</li>
+          <li>Einschränkung der Verarbeitung (Art. 18 DSGVO)</li>
+          <li>Datenübertragbarkeit (Art. 20 DSGVO)</li>
+          <li>Widerspruch (Art. 21 DSGVO)</li>
+        </ul>
+        <p>
+          Zur Ausübung Ihrer Rechte genügt eine formlose Mitteilung per E-Mail an
+          <a class="link" href="mailto:contact@susanne-renken.com">contact@susanne-renken.com</a>.
+        </p>
+
+        <h2>15. Beschwerderecht</h2>
+        <p>
+          Sie haben zudem das Recht, sich bei einer Datenschutz-Aufsichtsbehörde zu beschweren.
+          Zuständig ist insbesondere die Aufsichtsbehörde Ihres üblichen Aufenthaltsortes oder des Orts des mutmaßlichen Verstoßes.
+        </p>
+
+        <h2>16. SSL / TLS-Verschlüsselung</h2>
+        <p>
+          Diese Website nutzt TLS/SSL-Verschlüsselung, um übertragene Daten vor dem Zugriff Dritter zu schützen.
+        </p>
+
+        <p style="margin-top: 24px;">
+          Stand: Februar 2026
+        </p>
+      </section>
     </main>
-    <footer class="main_footer pad_l">
-        <a class="logo" href="./index.html">
-            <img src="./assets/logo/logo_coderr_light.svg" alt="" srcset="">
-        </a>
-        <p>© 2024 Coderr. All rights reserved.</p>
-        <div class="d_flex_cc_gm">
-            <a class="link" href="./imprint.html">Impressum</a>
-            <a class="link" href="./privacy_policy.html">Datenschutz</a>
-        </div>
-    </footer>
-</body>
 
+    <footer class="main_footer pad_l">
+      <a class="logo" href="./index.html">
+        <img src="./assets/logo/logo_coderr_light.svg" alt="" srcset="" />
+      </a>
+      <p>© 2024 Coderr. All rights reserved.</p>
+      <div class="d_flex_cc_gm">
+        <a class="link" href="./imprint.html">Impressum</a>
+        <a class="link" href="./privacy_policy.html">Datenschutz</a>
+      </div>
+    </footer>
+  </body>
 </html>
