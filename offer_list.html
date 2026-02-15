@@ -129,6 +129,39 @@
             </div>
         </section>
 
+                <section onclick="closeDialog('guest_login_dialog')" id="guest_login_dialog"
+            class="dialog pad_m d_flex_cc_gm d_none">
+            <div onclick="stopProp(event)" class="m_auto small_form d_flex_cc_gl f_d_c">
+
+                <h2 class="font_prime_color">Wähle einen Gastzugang</h2>
+                <div class="d_flex_cc_gl guest_login_box">
+                    <div class="card d_flex_cc_gl f_d_c ">
+                        <h3 class="font_prime_color">Demo <br> Anbieter</h3>
+                        <p>Ein Anbieter kann:</p>
+                        <ul class="feature_list d_flex_cc_gm f_d_c">
+                            <li>Angebote erstellen</li>
+                            <li>Bestellungen bearbeiten</li>
+                        </ul>
+                        <button onclick="guestLogin('business')"
+                            class="login_btn std_btn btn_prime pad_s d_flex_cc_gm"><img
+                                src="./assets/icons/arrow_forward.svg" alt="" srcset=""> Login</button>
+                    </div>
+                    <div class="card d_flex_cc_gl f_d_c ">
+                        <h3 class="font_prime_color">Demo<br>Kunde</h3>
+                        <p>Ein Kunde kann:</p>
+                        <ul class="feature_list d_flex_cc_gm f_d_c">
+                            <li>Rieviews erstellen</li>
+                            <li>Bestellungen aufgeben</li>
+                        </ul>
+                        <button onclick="guestLogin('customer')"
+                            class="login_btn std_btn btn_prime pad_s d_flex_cc_gm"><img
+                                src="./assets/icons/arrow_forward.svg" alt="" srcset=""> Login</button>
+                    </div>
+                </div>
+                <p>Beide können Angebote durchsuchen und andere öffentliche Profile einsehen.</p>
+
+            </div>
+        </section>
         
     </main>
     <footer class="main_footer pad_l">
